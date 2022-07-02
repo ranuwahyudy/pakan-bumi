@@ -145,3 +145,35 @@ export const SocialLogo = {
     </svg>
   ),
 };
+
+export const ArrowIconSliderSmall = () => (
+  <svg
+    width="24"
+    height="25"
+    viewBox="0 0 24 25"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M5 12.5H19"
+      stroke="#313131"
+      strokeWidth="1.25"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M15 16.5L19 12.5"
+      stroke="#313131"
+      strokeWidth="1.25"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M15 8.5L19 12.5"
+      stroke="#313131"
+      strokeWidth="1.25"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
