@@ -75,6 +75,9 @@ const Pesan = () => {
                   Redeem
                 </button>
               </div>
+              <p className="font-semibold mt-1 text-[#21941E]">
+                {redeem ? "Selamat anda mendapat gratis ongkir!" : ""}
+              </p>
             </div>
             <div>
               <div className="w-full shadow-xl p-5 text-semiBlack">

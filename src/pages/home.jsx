@@ -163,10 +163,6 @@ const Home = () => {
         <div className="top-0 left-0 absolute w-full h-full flex flex-col justify-center items-center text-white gap-3">
           <h3 className="font-semibold text-5xl">#MulaiKurangiSampahMakanan</h3>
           <p>Setor sampah makananmu sekarang dan kumpulkan pointnya</p>
-
-          <button className="text-semiBlack bg-green-100 px-6 py-2 rounded-xl font-semibold transition hover:bg-green-200">
-            Mulai
-          </button>
         </div>
       </section>
     </BasicLayout>
