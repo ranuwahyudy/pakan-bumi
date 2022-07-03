@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# 🥗 PakanBumi 🥗
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Generasi GIGIH 2.0 Capstone Project by FE-WA 4.
 
-## Available Scripts
+1. Vania Elvina Afiati (KM_G2FE1145)
+2. Nur Intan Sari (KM_G2FE3117)
+3. Ranu Dwi Wahyudy (KM_G2FE5077)
+4. Defa Maulana Firmansyah (KM_G2FE4070)
+5. Muhammad Raviq (P_G2FE2022)
 
-In the project directory, you can run:
+![Logo PakanBumi](./docs/logo_pakan_bumi.png)
 
-### `npm start`
+PakanBumi is a website that provides a food waste pick-up service where customers can earn points that can be exchanged for vouchers or digital money.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Click here for demo](https://fe-wa4-pakan-bumi.vercel.app)
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Login and Registration
+- Profile
+- Pemesanan Jemput Sampah Makanan
+- Tukar Poin
+- Artikel Edukasi
 
-### `npm run build`
+## Tech/Framework Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ReactJS
+- Tailwind CSS
+- Typescript
+- Figma
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation and Setup Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone repo
 
-### `npm run eject`
+```
+git clone https://github.com/ranuwahyudy/pakan-bumi.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install depedencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Start development environment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm start
+```
 
-## Learn More
+To build production files and start production server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Screenshots
 
-### Code Splitting
+![Login Page](./docs/login.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Signup Page](./docs/signup.png)
 
-### Analyzing the Bundle Size
+![Home Page](./docs/home.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Tukar Poin Page](./docs/tukar_poin.png)
 
-### Making a Progressive Web App
+![Artikel Page](./docs/artikel.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Tentang Kami Page](./docs/tentang_kami.png)
