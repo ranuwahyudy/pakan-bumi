@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BasicLayout from "../components/layout/basicLayout";
 
 const Home = () => {
@@ -14,8 +15,8 @@ const Home = () => {
       </h2>
 
       {/* box div */}
-      <div className="flex justify-center mt-10 w-full z-10 ">
-        <div className="w-full max-w-5xl h-44 shadow-2xl rounded-xl flex overflow-hidden bg-white">
+      <div className="flex justify-center mt-10 w-full z-10">
+        <div className="w-full max-w-5xl h-44 shadow-2xl rounded-xl flex overflow-hidden bg-white z-10">
           <div className="w-full px-6 py-4">
             <p className="text-darkGreen text-xl font-semibold">
               BUAT PESANANMU DISINI
@@ -25,18 +26,24 @@ const Home = () => {
                 <p className="text-sm text-blackText">Lokasi</p>
                 <select className="p-3 mt-2 rounded-lg cursor-pointer bg-white shadow-lg w-full text-sm text-[#666666]">
                   <option value="">Pilih Kota</option>
+                  <option value="">Jakarta Pusat</option>
+                  <option value="">Jakarta Barat</option>
+                  <option value="">Jakarta Utara</option>
+                  <option value="">Jakarta Selatan</option>
                 </select>
               </div>
               <div className="w-full">
                 <p className="text-sm text-blackText">Kategori</p>
                 <select className="p-3 mt-2 rounded-lg cursor-pointer bg-white shadow-lg w-full text-sm text-[#666666]">
                   <option value="">Pilih Kategori</option>
+                  <option value="">Rumah Tangga</option>
+                  <option value="">Mitra/Resto</option>
                 </select>
               </div>
               <div className="w-full relative">
                 <p className="text-sm text-blackText">Berat Sampah</p>
                 <input
-                  type="text"
+                  type="number"
                   placeholder="0 gram"
                   className="p-3 mt-2 rounded-lg bg-white shadow-lg w-full text-sm text-[#666666]"
                 />
@@ -46,15 +53,23 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <button className="h-full bg-green-100 hover:bg-green-200 px-10 text-white font-bold text-xl transition">
-            PESAN
-          </button>
+          <Link
+            to={
+              localStorage.getItem("isLoggedIn") === "true"
+                ? "/pesanan"
+                : "/login"
+            }
+          >
+            <button className="h-full bg-green-100 hover:bg-green-200 px-10 text-white font-bold text-xl transition">
+              PESAN
+            </button>
+          </Link>
         </div>
       </div>
 
       {/* full width image */}
       <div className="flex justify-center -mt-20">
-        <img src="/main-img.png" alt="sampah" className="w-full -z-10" />
+        <img src="/main-img.png" alt="sampah" className="w-full z-0" />
       </div>
 
       {/* h3 title center */}
@@ -134,9 +149,11 @@ const Home = () => {
             tidak, plus pelajari tiga aturan sederhana untuk membantu Anda
             mendaur ulang dengan benar.
           </article>
-          <button className="bg-[#E8F733] rounded-full px-5 py-2 mt-10 font-bold text-lg transition hover:opacity-80">
-            Pelajari Recycling 101
-          </button>
+          <Link to="/artikel/recycling-101">
+            <button className="bg-[#E8F733] rounded-full px-5 py-2 mt-10 font-bold text-lg transition hover:opacity-80">
+              Pelajari Recycling 101
+            </button>
+          </Link>
         </div>
         <img src="/recycle-main.png" alt="recycle" />
       </section>
@@ -146,6 +163,7 @@ const Home = () => {
         <div className="top-0 left-0 absolute w-full h-full flex flex-col justify-center items-center text-white gap-3">
           <h3 className="font-semibold text-5xl">#MulaiKurangiSampahMakanan</h3>
           <p>Setor sampah makananmu sekarang dan kumpulkan pointnya</p>
+
           <button className="text-semiBlack bg-green-100 px-6 py-2 rounded-xl font-semibold transition hover:bg-green-200">
             Mulai
           </button>
