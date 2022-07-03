@@ -2,14 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import MainRoute from "./routes";
 import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root: ReactDOM.Root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <div className="font-poppins">
+      <div className="font-poppins scroll-smooth">
         <MainRoute />
       </div>
     </BrowserRouter>
