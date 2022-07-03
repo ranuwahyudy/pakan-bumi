@@ -11,6 +11,8 @@ import LoginLayout from "./components/layout/loginLayout";
 import Profile from "./pages/profile";
 import FoodWaste from "./pages/artikel/foodWaste";
 import Recycling101 from "./pages/artikel/recycling101";
+import Pesan from "./pages/pesanan/pesan";
+import Terkonfirmasi from "./pages/pesanan/terkonfirmasi";
 
 const MainRoute = () => {
   return (
@@ -32,6 +34,10 @@ const MainRoute = () => {
         <Route path="tentang-kami" element={<TentangKami />} />
         {/* halaman profile */}
         <Route path="profile" element={<Profile />} />
+
+        {/* pesanan */}
+        <Route path="pesanan" element={<Pesan />} />
+        <Route path="pesanan/terkonfirmasi" element={<Terkonfirmasi />} />
 
       </Route>
 
