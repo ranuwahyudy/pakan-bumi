@@ -5,7 +5,7 @@ import Header from "../header";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="bg-gradient-to-b from-white to-[#F2F2F2]">
       <Header />
       <Outlet />
       <Footer />

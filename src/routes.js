@@ -8,6 +8,9 @@ import TentangKami from "./pages/tentangKami";
 import Login from "./pages/login";
 import Signup from "./pages/login/signup";
 import LoginLayout from "./components/layout/loginLayout";
+import Profile from "./pages/profile";
+import FoodWaste from "./pages/artikel/foodWaste";
+import Recycling101 from "./pages/artikel/recycling101";
 
 const MainRoute = () => {
   return (
@@ -20,8 +23,16 @@ const MainRoute = () => {
         <Route path="tukar-poin" element={<TukarPoin />} />
         {/* halaman artikel */}
         <Route path="artikel" element={<Artikel />} />
+
+        {/* artikel lainnya */}
+        <Route path="artikel/food-waste" element={<FoodWaste />} />
+        <Route path="artikel/recycling-101" element={<Recycling101 />} />
+
         {/* halaman tentang kami */}
         <Route path="tentang-kami" element={<TentangKami />} />
+        {/* halaman profile */}
+        <Route path="profile" element={<Profile />} />
+
       </Route>
 
       {/* layout halaman login */}
