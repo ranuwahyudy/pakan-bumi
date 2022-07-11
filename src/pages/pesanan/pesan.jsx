@@ -43,8 +43,8 @@ const Pesan = () => {
             <h2 className="font-semibold text-xl">Data Diri</h2>
             <ul className="w-full flex flex-col gap-5 mt-5">
               <li className="flex justify-between">
-                <p className="font-medium text-[#696E70]">Raffi Ahmad</p>
-                <p className="font-medium text-semiBlack">Jakarta Pusat</p>
+                <p className="font-medium text-[#696E70]">Nama</p>
+                <p className="font-medium text-semiBlack">Raffi Ahmad</p>
               </li>
               <li className="flex justify-between">
                 <p className="font-medium text-[#696E70]">Alamat</p>
